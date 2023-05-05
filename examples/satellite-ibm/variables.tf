@@ -189,7 +189,7 @@ variable "cluster" {
 
 variable "kube_version" {
   description = "Satellite Kube Version"
-  default     = "4.7_openshift"
+  default     = "4.12.13_openshift"
 }
 
 variable "worker_count" {

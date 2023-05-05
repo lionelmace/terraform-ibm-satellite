@@ -18,8 +18,8 @@
 ## ROKS Cluster
 ##############################################################################
 
-# create_cluster = true
-# create_cluster_worker_pool = true
+create_cluster = true
+create_cluster_worker_pool = true
 
 # Total number of worker nodes for cluster
 addl_hosts = [

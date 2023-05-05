@@ -127,7 +127,7 @@ module "satellite-cluster-worker-pool" {
 | create_cluster                        | Create cluster Disable this, not to provision cluster             | bool     | true    | no       |
 | cluster                               | Name of the ROKS Cluster that has to be created                   | string   | satellite-ibm-cluster     | no      |
 | cluster_zones                         | Allocate your hosts across these three zones                      | set      | n/a     | no      |
-| kube_version                          | Kuber version                                                     | string   | 4.7_openshift | no |
+| kube_version                          | Kuber version                                                     | string   | 4.12.13_openshift | no |
 | default_wp_labels                     | Labels on the default worker pool                                 | map      | n/a     | no       |
 | workerpool_labels                     | Labels on the worker pool                                         | map      | n/a     | no       |
 | cluster_tags                          | List of tags for the cluster resource                             | list     | n/a     | no       |
