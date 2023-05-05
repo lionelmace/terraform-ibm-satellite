@@ -24,7 +24,7 @@ create_cluster_worker_pool = false
 # Total number of worker nodes for cluster
 addl_hosts = [
     {
-        instance_type = "mx2-8x64"
+        instance_type = "bx2.4x16"
         count         = 3
     }
 ]
