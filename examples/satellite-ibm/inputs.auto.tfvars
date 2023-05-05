@@ -19,7 +19,7 @@
 ##############################################################################
 
 create_cluster = true
-create_cluster_worker_pool = true
+create_cluster_worker_pool = false
 
 # Total number of worker nodes for cluster
 addl_hosts = [
