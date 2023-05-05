@@ -2,6 +2,12 @@
 # IBMCLOUD Authentication and Target Variables.
 # The region variable is common across zones used to setup VSI Infrastructure and Satellite host.
 #################################################################################################
+
+variable "ibmcloud_api_key" {
+  description = "The IBM Cloud platform API key needed to deploy IAM enabled resources"
+  type        = string
+}
+
 variable "ibm_region" {
   description = "Region of the IBM Cloud account. Currently supported regions for satellite are us-east and eu-gb region."
   default     = "us-east"
