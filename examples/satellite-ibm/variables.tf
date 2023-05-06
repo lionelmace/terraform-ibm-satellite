@@ -91,7 +91,7 @@ variable "cp_hosts" {
   )
   default = [
     {
-      instance_type = "bx2.4x16"
+      instance_type = "mx2-8x64"
       count         = 3
     }
   ]
@@ -152,13 +152,13 @@ variable "ssh_key_id" {
 variable "location_profile" {
   description = "[Deprecated] Profile information of location hosts"
   type        = string
-  default     = "bx2.4x16"
+  default     = "mx2-8x64"
 }
 
 variable "cluster_profile" {
   description = "[Deprecated] Profile information of Cluster hosts"
   type        = string
-  default     = "bx2.4x16"
+  default     = "mx2-8x64"
 }
 
 variable "worker_image" {

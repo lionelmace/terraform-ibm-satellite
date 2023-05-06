@@ -119,9 +119,9 @@ module "satellite-cluster-worker-pool" {
 | host_provider                         | The cloud provider of host/vms.                                   | string   | ibm     | no       |
 | is_prefix                             | Prefix to the Names of all VSI Resources                          | string   | satellite-ibm | yes|
 | public_key                            | Public SSH key used to provision Host/VSI                         | string   | n/a     | no       |
-| location_profile                      | [Deprecated] Profile information of location hosts                             | string   | bx2.4x16| no       |
-| cluster_profile                       | [Deprecated] Profile information of cluster hosts                              | string   | bx2.4x16| no       |
-| cp_hosts                              | A list of IBM host objects used to create the location control plane, including parameters instance_type and count. Control plane count values should always be in multipes of 3, such as 3, 6, 9, or 12 hosts.                  | list   | [<br>&ensp; {<br>&ensp;&ensp; instance_type = "bx2.4x16"<br>&ensp; count         = 3<br>&ensp;&ensp; }<br>]             | no    |
+| location_profile                      | [Deprecated] Profile information of location hosts                             | string   | mx2-8x64| no       |
+| cluster_profile                       | [Deprecated] Profile information of cluster hosts                              | string   | mx2-8x64| no       |
+| cp_hosts                              | A list of IBM host objects used to create the location control plane, including parameters instance_type and count. Control plane count values should always be in multipes of 3, such as 3, 6, 9, or 12 hosts.                  | list   | [<br>&ensp; {<br>&ensp;&ensp; instance_type = "mx2-8x64"<br>&ensp; count         = 3<br>&ensp;&ensp; }<br>]             | no    |
 | addl_hosts                            | A list of IBM host objects used for provisioning services on your location after setup, including instance_type and count, see cp_hosts for an example.                  | list   | []             | no    |
 | worker_image                          | Specify the image for hosts to be created with                    | string   | ibm-redhat-7-9-minimal-amd64-3    | no       |
 | create_cluster                        | Create cluster Disable this, not to provision cluster             | bool     | true    | no       |
